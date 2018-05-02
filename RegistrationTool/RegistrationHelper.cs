@@ -83,7 +83,7 @@ namespace PluginRegistrationTool
         /// <summary>
         /// Error messages.
         /// </summary>
-        private Collection<string> errors;
+        private Collection<string> errors = new Collection<string> ();
 
         /// <summary>
         /// Error messages.
@@ -151,6 +151,10 @@ namespace PluginRegistrationTool
             {
                 SerializeDeserialize serializer = new SerializeDeserialize();
                 AssemblyRegistration = (AssemblyRegistration)serializer.DeserializeXml((XmlDocument)assemblyRegistrationXml, typeof(AssemblyRegistration));
+                if (AssemblyRegistration.Ignore == true)
+                {
+                    return true;
+                }
                 return this.Register(AssemblyRegistration);
             }
             catch (FaultException<Microsoft.Xrm.Sdk.OrganizationServiceFault> e)

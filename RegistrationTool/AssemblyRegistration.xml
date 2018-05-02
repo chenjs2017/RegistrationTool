@@ -15,8 +15,8 @@
               <Rank>0</Rank>
               <InvocationSource>Parent</InvocationSource>
               <PluginMessage>Create</PluginMessage>
-              <PrimaryEntity>account</PrimaryEntity>
-              <Stage>PostOperation</Stage>
+              <PrimaryEntity>new_order</PrimaryEntity>
+              <Stage>PreOperation</Stage>
               <Deployment>ServerOnly</Deployment>
 			        <UnsecureConfiguration>{something=something}</UnsecureConfiguration>
             </PluginStep>

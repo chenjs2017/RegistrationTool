@@ -6,6 +6,7 @@ namespace PluginRegistrationTool
     {
         public string ConnectionString { get; set; }
         public Collection<Registration> Registrations { get; set; }
+        public bool Ignore { get; set; }
         
     }
 }

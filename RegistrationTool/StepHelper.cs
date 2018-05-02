@@ -519,6 +519,7 @@ namespace PluginRegistrationTool
                             }
                         }
                         xrmPluginStep.UnsecureConfiguration = step.UnsecureConfiguration;
+                        xrmPluginStep.FilteringAttributes = step.FilteringAttributes;
                         xrmPluginStep.Mode = step.Mode;
                         xrmPluginStep.Rank = step.Rank;
                         xrmPluginStep.InvocationSource = step.InvocationSource;

@@ -9,127 +9,14 @@ namespace PluginRegistrationTool
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Plugin")]
     public class PluginStep
     {
-        /// <summary>
-        /// The Unsecure String Property.
-        /// </summary>
-        private string _unsecureConfiguration;
-
-        /// <summary>
-        /// The Unsecure String Property.
-        /// </summary>
-        public string UnsecureConfiguration
-        {
-            get
-            {
-                return _unsecureConfiguration;
-            }
-            set
-            {
-                _unsecureConfiguration = value;
-            }
-        }
-
-        /// <summary>
-        /// The Secure String Property.
-        /// </summary>
-        private string _secureConfiguration;
-
-        /// <summary>
-        /// The Secure String Property.
-        /// </summary>
-        public string SecureConfiguration
-        {
-            get
-            {
-                return _secureConfiguration;
-            }
-            set
-            {
-                _secureConfiguration = value;
-            }
-        }
-
-        /// <summary>
-        /// The Step's Name Property.
-        /// </summary>
-        private string _name;
-
-        /// <summary>
-        /// The Step's Name Property.
-        /// </summary>
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-            set
-            {
-                _name = value;
-            }
-        }
-
-        /// <summary>
-        /// The XRM Plugin Step Mode Enumerator Property.
-        /// </summary>
-        private XrmPluginStepMode _mode;
-
-        /// <summary>
-        /// The XRM Plugin Step Mode Enumerator Property.
-        /// </summary>
-        public XrmPluginStepMode Mode
-        {
-            get
-            {
-                return _mode;
-            }
-            set
-            {
-                _mode = value;
-            }
-        }
-
-        /// <summary>
-        /// The Step's Rank Integer Property.
-        /// </summary>
-        private int? _rank;
-
-        /// <summary>
-        /// The Step's Rank Integer Property.
-        /// </summary>
-        public int? Rank
-        {
-            get
-            {
-                return _rank;
-            }
-            set
-            {
-                _rank = value;
-            }
-        }
-
-        /// <summary>
-        /// The XRM Plugin Step Invocation Source Enumerator Property.
-        /// </summary>
-        private XrmPluginStepInvocationSource _invocationSource;
-
-        /// <summary>
-        /// The XRM Plugin Step Invocation Source Enumerator Property.
-        /// </summary>
-        public XrmPluginStepInvocationSource InvocationSource
-        {
-            get
-            {
-                return _invocationSource;
-            }
-            set
-            {
-                _invocationSource = value;
-            }
-        }
-
-        /// <summary>
+        public string FilteringAttributes { get; set; }
+        public string UnsecureConfiguration { get; set; }
+        public string SecureConfiguration { get; set; }
+        public string Name { get; set; }
+        public XrmPluginStepMode Mode { get; set; }
+        public int? Rank { get; set; }
+        public XrmPluginStepInvocationSource InvocationSource { get; set; }
+                /// <summary>
         /// The Message String Property.
         /// </summary>
         private string _pluginMessage;
